@@ -10,101 +10,166 @@
 
      <style type="text/css">
         * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        body { font: 18px Helvetica, Sans-Serif; line-height: 24px;color: #404040; background: url(images/noise.jpg); }
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
         #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold;text-align:center; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h1 span { position: absolute;  left: 80%; font-style: italic; font-family: Georgia, Serif; font-size: 24px; color: #999; font-weight: normal;  }
+        h2 { font-size: 22px; margin: 0 0 6px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
+        
+        p { margin: 0 0 16px 0; font-size: 16px;}
         a { color: #000; text-decoration: none; border-bottom: 1px dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
+        ul { margin: 0 0 32px 20px; }
         #objective { width: 500px; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
      </style>
 </head>
 
 <body>
-
     <div id="page-wrap">
-    
-    
-        <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">余孟勳</h1>
-        
+        <div id="contact-info" class="vcard" style="text-align:center;">
+            <h1>余孟勳</h1>
             <p>
-                Email: <a class="email" href="mailto:kobe0308@gmail.com">kobe0308@gmail.com</a>
+                Email: <a class="email" href="mailto:kobeyu.tw@gmail.com">kobeyu.tw@gmail.com</a>
+                <!-- TEL: 0919831157 -->
             </p>
         </div>
-                
-        <div id="objective">
-            <p>
-                我畢業於中正大學電機所,主要研究的領域為影像處理,截至目前為止累積了將近六年的工作經驗,都是與軟體開發有關<br>
-                
-            </p>
+        <div style="text-align:left;">
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                我是余孟勳，2008年畢業於中正大學電機所，研究領域是影像處理，論文題目是"結合全景與PTZ攝影機之機器人視覺監控系統"，透過偵測移動物體找出特徵點，然後動態追蹤演算法驅動機器人往移動目標前進，主要貢獻在於機器人移動時能夠持續追蹤物體的位置，而畢業至今累積了將近六年的工作經驗，都是以軟體開發為主。
+                <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                最近的一份工作是在新創公司SmartAll，主要產品是智慧管家，這個智慧管家不僅能夠讓使用者從透過App了解家裡面的情況，包括即時串流觀看家裡環境以及家電狀態，
+                還可以透過個人辨識與學習操作習慣，在適當的時間幫使用者將居家環境調整到舒適的狀態，我主要負責開發iOS App，此外這是一個七個人的小型團隊，所以除了軟體開發之外，也參與了許多商業策略的討論與決策。
+                <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         </div>
-        
         <div class="clear"></div>
-        
         <dl>
             <dd class="clear"></dd>
-            
              <dt>Skills</dt>
             <dd>
                 <h2>Software Programming</h2>
                 <ul>
-                    <li>iOS Development</li>
-                    <li>Embedded System</li>
-                </ul>
+                    <li>iOS Development (Objective-C,Swift)</li>
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            我是從2013年開始開發iOS App,在正職的工作中開發了兩款即時串流App,
+                            這兩款即時串流app都是從嵌入式系統上經過網路封包傳送到手機端,再透過H264 Decoder解碼,然後再將解完的YUV的影像資料渲染到螢幕上。
+                            <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            整體的app架構除了採用常見的MVC的架構外,還另外將處理收送網路封包與H264 Decoder的部份使用c語言實作然後再封裝成函式庫,一方面能讓ios與android共用,另外一方便也便於維護與工作的拆分。
+                            <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        </p>
+                    <li>Embedded System (C)</li>
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            嵌入式系統的開發主要分為兩個階段，一開始是再創研光電服務期間，開發行車記錄器上的功能，主要實作的內容是依客戶需求修改應用程式。
+                            <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            第二個階段則是利用自己私底下的時間，跟著成功大學黃教授的嵌入式系統課程筆記實作一些感興趣的題目,如透過perf/gprof評估應用程式記憶體使用率與效能分析/unit test/jit/ray tracing...etc。
+                        </p>
+                    <li>Microsoft Desktop Application (Visual C++)</li>
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            這部分分為兩個階段，一個是研究所期間幾乎所有的影像處理相關的應用程式都是在visual studio上開發的，當然也包括了碩士論文，我的碩士論文是透過rtv24影像擷取卡，將類比影像轉為數位後，透過opencv進行影像前處理接著將產生的中介資料輸入演算法建立特徵然後進行物體追蹤。
+                            <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            在創研期間則是時做了一個行車記錄器的影音播放程式，跟一般影音播放器不同的地方在於除了影音資料外還有地理位置與三軸數據都要同步顯示，在這個應用程式中使用了QT與VLC函式庫來完成UI與影音解碼的功能。
 
-                <h2>Programming Language</h2>
-                <ul>
-                    <li>C</li>
-                    <li>Objective-C</li>
-                    <li>Swift</li>
+                            
+                        </p>
                 </ul>
             </dd>
 
              <dd class="clear"></dd>
             <dt>Experience</dt>
             <dd>
-                <h2>SmartAll<span>Senior iOS Developer - 2016/2 ~</span></h2>
+                <h2>Work Experience</h2>
                 <ul>
-                    <li><a href="https://www.kickstarter.com/projects/1977486391/smartall-the-first-ai-butler-for-everyone?ref=user_menu">開發iOS應用程式</a></li>
+                    <h2>SmartAll<span>Senior iOS Developer - 2016/2 ~</span></h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.kickstarter.com/projects/1977486391/smartall-the-first-ai-butler-for-everyone?ref=user_menu">AI智慧管家</a>
+                        </li>
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            在這個專案中主要是由我一人負責開發iOS App的全部功能，使用的程式語言是Swift，實作的部份有串流與控制封包收送/影像解碼與渲染/UI實作與後台伺服器資料收送。
+                        </p>
+                    </ul>
                 </ul>
-
-                <h2>微星科技 <span>iOS Developer - 2013/11 ~ 2016/2</span></h2>
                 <ul>
-                    <li><a href="https://itunes.apple.com/us/app/somethings/id880915963?mt=8">開發iOS應用程式</a></li>
-                </ul> 
-
-                <h2>創研光電 <span>Software Developer - 2016/1 ~ 2013/3</span></h2>
+                    <h2>微星科技 <span>iOS Developer - 2013/11 ~ 2016/2</span></h2>
+                    <ul>
+                        <li>
+                            <a href="http://somethings.msi.com/zh-tw">Somethings網路串流攝影機</a>
+                            &emsp;&emsp;&emsp;
+                            <a href="https://itunes.apple.com/us/app/somethings/id880915963?mt=8">App連結</a>
+                        </li>
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            在這個專案中我和我的主管一起開發iOS App，我負責了大多數的UI實作，使用的程式語言是
+                            Objective-C。
+                        </p>
+                    </ul> 
+                </ul>
                 <ul>
-                    <li><a href="http://www.auto-online.com.tw/news/139-19840?f=0">開發Windows桌面應用程式</a></li>
-                    <li>嵌入式系統開發</li>
-                    <li>規劃並執行產學合作專案與研究生暑期實習專案</li>
-                </ul> 
+                    <h2>創研光電 <span>Software Developer - 2010/1 ~ 2013/3</span></h2>
+                    <ul>
+                        <li>
+                            <a href="http://www.auto-online.com.tw/news/139-19840?f=0">C-Wish EPONA</a>
+                        </li>
+                        <p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            在這個專案中我主要是負責Windos的應用程式開發,使用的程式語言是Visual C++，功能有影像播放並同步顯示位置與三軸數據。
+                            <br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            在其他的專案中負責嵌入式系統開發，在Linux作業系統上使用C語言。
+                        </p>
+                    </ul> 
+                </ul>
+                <h2>Volunteer Experience</h2>
+                <ul>
+                    <h2>蘭嶼海龜生態志工 <span>2013/7 ~ 2013/9</span></h2>
+                        <p>觀察與記錄海龜在蘭嶼上岸產卵的情況。</p>
+                    <h2>蘭恩基金會幼兒園志工 <span>2013/6 ~ 2013/7</span></h2>
+                        <p>協助導師教學與協助庶務工作。</p>
+                    <h2>夏門攝影企劃研究室 <span>2013/2 ~ 2013/5</span></h2>
+                        <p>協助數位化日據時代台灣前輩攝影師的影像作品。</p>
+                </ul>
+                
+            </dd>
+
+            <dd class="clear"></dd>
+            <dt>Side Project</dt>
+             <dd>
+                <h2><a href="http://devpost.com/software/love-snow-mountain">不走雪山做公益</a> <span>2015/9 ~ 2015/11</span></h2>
+                    <p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        在工作之外也和朋友參加過一些程式競賽，其中這個是使用軟體服務緩解雪山隧道假日塞車的問題，當時我們的解決方案是引導使用者走我們指定的路徑(北橫,北宜或沿海公路)，當使用者選擇走我們建議的路徑，並通過檢查點後，我們就會提撥一筆費用給這些路徑上的NGO組織，而經費則向這些路徑上的店家收取廣告費用，目的是創造三贏的局面，而我負責的部份是iOS App開發。
+                    </p>
+                <h2>AR APP <span>2015/4 ~ 2015/9</span></h2>
+                    <p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        這個專案是跟國內大學合作的一個專案，主要目的是透過<a href="http://structure.io/">Structure sensor</a>來跟虛擬物件互動，在這個計畫中主要是要做到遮蔽的效果，原理是取得現實世界的三維資訊，透過演算法計算與虛擬物件是否有碰撞，若有碰撞則產生遮蔽的視覺效果。
+                    </p>
+                <h2>NCKU 嵌入式作業系統設計與實作 <span>2016/3 ~ </span></h2>
+                    <p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        對嵌入式系統的興趣，再加上黃教授將這門課的內容與實作細節都放在網路上，利用下班或假日的時間跟著步驟實作並分析結果，到目前為止我的心得是越瞭解系統的工作原理，對於未來在撰寫程式或架構系統時，會更注意細節的掌握，例如從變數的宣告方式會影響記憶體使用空間進而影響執行效能，到共同開發時如何使用工具讓程式碼的風格一致或使用測試工具讓軟體開發能兼顧效率跟品質。
+
+
+                    </p>
             </dd>
 
             <dd class="clear"></dd>
             <dt>Education</dt>
             <dd>
-                <h2>中正大學 電機研究所 <span>2006/9 ~ 2008/10</span></h2>
-                <ul>
-                    <p><strong>Major:</strong> Image Processing<br />
-                     <br />
-                </ul>
+                <h2>中正大學 電機研究所    <span>2006/9 ~ 2008/10</span></h2>
+                <h2>勤益技術學院 電子工程系 <span>2004/9 ~ 2006/6</span></h2>
             </dd>
-             <dd class="clear"></dd>
 
+            <dd class="clear"></dd>
               <dt>Publications</dt>
             <dd>
                 <h2>Thesis</h2>
@@ -115,21 +180,15 @@
                 <ul>
                     <p><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5602482">H. Y. Lin, C. C. Chang, M. S. Yu, and H. Wu, "A Robot Vision System for Visual Surveillance," International Journal of Innovative Computing, Information and Control, Vol. 10, No. 4, pp. 1267-1274, Aug. 2014.</a> <br />
                     <p><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5602482">H. Y. Lin, L. Q. Chen, M. S. Yu, "Lane departure and front collision warning using a single camera", International Symposium on Intelligent Signal Processing and Communication System, pp. 64-69, Nov. 2012.</a> <br />
-
-
-
                 </ul>
             </dd>
-
             <dd class="clear"></dd>
-           
-            
         </dl>
-        
         <div class="clear"></div>
-    
     </div>
 
+    <h2 ><span>A MAN WALKS ON THE GROUND SLOWLY&emsp;&emsp;&emsp;&emsp;</span></h2>    
+    
 </body>
 
 </html>
